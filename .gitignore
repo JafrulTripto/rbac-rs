@@ -1,0 +1,6 @@
+/target
+.sqlx
+.env
+Cargo.lock
+docker-compose.yml
+data

@@ -1,0 +1,22 @@
+[package]
+name = "rbac-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jafrul Hossain <jafrultripto@gmail.com>"]
+description = "A pluggable RBAC system for Rust using SQLx."
+license = "MIT"
+repository = "https://github.com/jafrultripto/rbac-rs"
+keywords = ["rbac", "authorization", "roles", "permissions", "sqlx"]
+categories = ["authentication", "database"]
+
+[dependencies]
+serde = { version = "1.0.217", features = ["derive"] }
+sqlx = {version = "0.8.3", features = ["postgres", "runtime-tokio", "uuid", "migrate"]}
+thiserror = "2.0.11"
+tokio = { version = "1.43.0", features = ["full"] }
+uuid = { version = "1.12.1", features = ["v4", "serde"] }
+
+[features]
+default = ["uuid-id"]
+incremental-id = []
+uuid-id = []
