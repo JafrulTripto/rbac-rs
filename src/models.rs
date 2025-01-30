@@ -1,5 +1,7 @@
 use serde::{Deserialize, Serialize};
 
+use crate::types::Id;
+
 #[derive(Debug, Serialize, Deserialize)]
 pub struct User {
     pub id: Id,

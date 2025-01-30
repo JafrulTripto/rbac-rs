@@ -1,11 +1,11 @@
 [package]
-name = "rbac-rs"
+name = "permissions-rs"
 version = "0.1.0"
 edition = "2021"
 authors = ["Jafrul Hossain <jafrultripto@gmail.com>"]
 description = "A pluggable RBAC system for Rust using SQLx."
 license = "MIT"
-repository = "https://github.com/jafrultripto/rbac-rs"
+repository = "https://github.com/JafrulTripto/permissions-rs.git"
 keywords = ["rbac", "authorization", "roles", "permissions", "sqlx"]
 categories = ["authentication", "database"]
 

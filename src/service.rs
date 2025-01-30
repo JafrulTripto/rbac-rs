@@ -1,6 +1,4 @@
-use crate::{errors::RBACError, repository::RbacRepository};
-
-
+use crate::{errors::RBACError, repository::RbacRepository, types::Id};
 pub struct RbacService {
     repo: RbacRepository,
 }
