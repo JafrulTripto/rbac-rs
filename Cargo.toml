@@ -1,6 +1,6 @@
 [package]
 name = "rbac-rs"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Jafrul Hossain <jafrultripto@gmail.com>"]
 description = "A pluggable RBAC system for Rust using SQLx."
@@ -14,12 +14,12 @@ serde = { version = "1.0.217", features = ["derive"] }
 sqlx = {version = "0.8.3", features = ["postgres", "runtime-tokio", "uuid", "migrate"]}
 thiserror = "2.0.11"
 tokio = { version = "1.43.0", features = ["full"] }
-uuid = { version = "1.12.1", features = ["v4", "serde"] }
+uuid = { version = "1.12.1", features = ["v4", "serde"], optional = true}
 
 [features]
 default = ["uuid-id"]
 incremental-id = []
-uuid-id = []
+uuid-id = ["uuid"]
 
 [[bin]]
 name = "install_rbac"
