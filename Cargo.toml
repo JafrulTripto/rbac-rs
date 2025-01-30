@@ -20,3 +20,7 @@ uuid = { version = "1.12.1", features = ["v4", "serde"] }
 default = ["uuid-id"]
 incremental-id = []
 uuid-id = []
+
+[[bin]]
+name = "install_rbac"
+path = "src/bin/install.rs"
